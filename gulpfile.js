@@ -95,7 +95,7 @@ gulp.task('scss', function () {
 
 // Build our JavaScript files using browserify
 gulp.task('js', function () {
-  return browserify('./src/js/init.js', { debug: true })
+  return browserify('./src/js/app.js', { debug: true })
     .transform('bulkify')
     .external('views')
     .external('jquery')
